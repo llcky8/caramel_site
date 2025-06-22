@@ -1,0 +1,70 @@
+/* Cases section */
+.cases-section {
+  background: #ffffff;
+  padding: 100px 100px;
+}
+
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.case-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  text-align: left;
+  max-width: 700px;
+}
+
+.case-card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  max-height: 400px;
+}
+
+.case-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.case-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.case-tag {
+  font-size: 12px;
+  color: gray;
+}
+
+@media (max-width: 640px) {
+  .cases-section {
+    padding: 60px 30px; /* адаптивный внутренний отступ */
+  }
+
+  .cases-grid {
+    grid-template-columns: 1fr; /* по одной карточке в ряд */
+    gap: 30px; /* чуть меньше отступ между карточками */
+  }
+
+  .case-card {
+    padding: 16px;
+  }
+
+  .case-card h3 {
+    font-size: 18px;
+  }
+
+  .case-card p {
+    font-size: 14px;
+  }
+
+  .case-tag {
+    font-size: 12px;
+  }
+}

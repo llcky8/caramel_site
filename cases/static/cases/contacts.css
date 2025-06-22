@@ -1,0 +1,141 @@
+.contacts-section {
+  background-color: #fff;
+  padding: 80px 60px;
+  color: #000;
+}
+
+.contacts-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.contact-block {
+  flex: 1 1 30%;
+  min-width: 200px;
+}
+
+.contact-title {
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.contact-title h3 {
+  font-size: 32px; /* увеличен размер заголовков */
+  font-weight: 700;
+  margin-bottom: 8px; /* небольшой отступ под заголовком */
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.cyan {
+  background-color: #00cfff;
+}
+
+.yellow {
+  background-color: #ffc700;
+}
+
+.red {
+  background-color: #ff3cac;
+}
+
+.contact-block p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.contact-block a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 700; /* все email теперь жирные */
+}
+
+.contact-block a[href^="tel:"] {
+  font-weight: 400; /* номер телефона обычный */
+}
+
+.contact-block a:hover {
+  color: #ff6600;
+}
+
+.small-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: -4px;
+}
+
+.contacts-divider {
+  height: 2px;
+  width: 40%; /* короче линия */
+  background-color: #000;
+  margin: 40px auto 30px;
+}
+
+.contacts-socials {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 18px; /* больше размер */
+  font-weight: 700; /* жирный шрифт */
+}
+
+.contacts-socials a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.contacts-socials a:hover {
+  color: #ff6600;
+}
+
+.contacts-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+/* Стили для мобильных */
+@media (max-width: 600px) {
+  .contacts-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-block {
+    flex: none; /* отменяем гибкость */
+    width: 100%; /* на всю ширину */
+    padding: 15px 20px;
+    border: 1px solid #ddd; /* легкая рамка для разделения */
+    border-radius: 8px;
+    background-color: #fafafa;
+  }
+
+  .contact-title {
+    margin-bottom: 15px;
+  }
+
+  .contact-block p {
+    margin: 6px 0;
+  }
+
+  .contacts-socials {
+    flex-direction: row; /* соцсети по горизонтали */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+}

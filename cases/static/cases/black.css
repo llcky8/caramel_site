@@ -1,0 +1,33 @@
+/* Секция КЛИЕНТЫ (тёмная) */
+.clients-section {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.clients-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.clients-subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.clients-subtitle .highlight {
+  color: #fff;
+  font-weight: 600;
+}
+
+.clients-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
