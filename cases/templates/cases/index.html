@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'cases/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'cases/header.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'cases/main.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'cases/black.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'cases/case.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'cases/contacts.css' %}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="маркетинг, SMM, caramel, продвижение, агентство">
+    <meta name="description" content="Caramel — агентство, создающее страстный и стильный SMM.">
+    <title>caramel.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <ul>
+            <li><a href="#about">О НАС</a></li>
+            <li><a href="#uslugi">УСЛУГИ</a></li>
+        </ul>
+        <a href="#about" class="logo">caramel.</a>
+        <ul>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
+            <li><a href="#cases">КЕЙСЫ</a></li>
+        </ul>
+    </header>
+    <!-- Главная -->
+    <main>
+        <section class="first section" id="about">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="fancy-heading">
+                        <span class="line offset-left">Самый</span><br />
+                        <span class="line">страстный Social Media</span><br />
+                        <span class="line offset-right with-main">
+                            <img id="rotating-img" src="{% static 'img/main.svg' %}" class="main-icon" alt="Main Icon"
+                                alt="Main Icon" />
+                            Marketing
+                        </span>
+                        <img src="{% static 'img/strelka.svg' %}" class="arrow-icon" alt="Arrow Down" />
+                    </h1>
+                </div>
+            </section>
+
+            <section class="smm-section">
+                <div class="smm-wrapper">
+                    <div class="smm-label">SMM</div>
+                    <div class="smm-text">
+                        <p>Ведем социальные сети брендов, создаем высококачественный визуальный контент, запускаем
+                            эффективные рекламные кампании и интеграции с лидерами мнений.</p>
+                        <p>Мы специализируемся на решении маркетинговых задач клиентов в Social Media. А благодаря
+                            performance-подходу, отслеживаем эффективность рекламы не в номинальных величинах вроде
+                            охвата
+                            аудитории, а в конкретных продажах, клиентах или бизнес-KPI.</p>
+                        <a href="https://t.me/dashonion" target="_blank" class="contact-btn">Напишите нам</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Информация об услугах-->
+        <section class="services-section" id="uslugi">
+            <h2 class="section-title">Направления услуг</h2>
+            <div class="services-grid">
+                <div class="service-block">
+                    <div class="service-number">1<span class="dot blue"></span></div>
+                    <h3>Исследования <br>и стратегии</h3>
+                    <ul>
+                        <li>Разработка стратегии бренда в социальных сетях</li>
+                        <li>Стратегии коммуникации и визуала соц.сетей бренда</li>
+                        <li>Инстайты аудитории</li>
+                        <li>Контентная политика</li>
+                        <li>Маркетинговые исследования</li>
+                    </ul>
+                </div>
+                <div class="service-block">
+                    <div class="service-number">2<span class="dot yellow"></span></div>
+                    <h3>Ведение <br>и продвижение</h3>
+                    <ul>
+                        <li>Реализовываем креативные и медийные SMM-проекты</li>
+                        <li>Разработка контент-плана</li>
+                        <li>Таргетированная реклама</li>
+                        <li>Influencer-маркетинг</li>
+                        <li>Вирусные механики</li>
+                        <li>Работа с негативом</li>
+                    </ul>
+                </div>
+                <div class="service-block">
+                    <div class="service-number">3<span class="dot red"></span></div>
+                    <h3>Продакшн <br>и дизайн</h3>
+                    <ul>
+                        <li>Предлагаем смелые идеи, которые эффективно работают и соответствуют политике бренда</li>
+                        <li>Креатив и концепции</li>
+                        <li>Режиссура видео</li>
+                        <li>Моушн-дизайн</li>
+                        <li>Продюсирование съемок</li>
+                    </ul>
+                </div>
+                <div class="service-block">
+                    <div class="service-number">4<span class="dot orange"></span></div>
+                    <h3>Community</h3>
+                    <ul>
+                        <li>Создание и развитие комьюнити</li>
+                        <li>Привлечение активных участников</li>
+                        <li>Проведение мероприятий для членов комьюнити</li>
+                        <li>Укрепление отношений между подписчиками</li>
+                        <li>Анализ обратной связи и отслеживание настроений</li>
+                    </ul>
+                </div>
+                <div class="service-block">
+                    <div class="service-number">5<span class="dot cyan"></span></div>
+                    <h3>Social e-commerce</h3>
+                    <ul>
+                        <li>Производство UGC-контента</li>
+                        <li>Ведение страниц брендов на различных social e-commerce платформах</li>
+                        <li>Livestreaming и продвижение на маркетплейсах</li>
+                        <li>Social e-commerce трансформация: консалтинг, обучение, воркшопы</li>
+                    </ul>
+                </div>
+                <div class="service-block">
+                    <div class="service-number">6<span class="dot brown"></span></div>
+                    <h3>Спецпроекты <br>в Social Media</h3>
+                    <ul>
+                        <li>Разработка креативных концепций</li>
+                        <li>Генерирование вовлекающих, игровых, развлекательных механик</li>
+                        <li>Детальная проработка и реализация</li>
+                        <li>Продвижение контента и достижение поставленных KPI</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Информация о клеинтах -->
+        <section class="clients-section">
+            <div class="clients-content">
+                <h2 class="clients-title">КЛИЕНТЫ</h2>
+                <p class="clients-subtitle">
+                    В числе наших <span class="highlight">amigos</span> — крупные бренды<br>
+                    и отраслевые лидеры
+                </p>
+            </div>
+            <div class="clients-image-wrapper">
+                <img src="{% static 'img/clients.png' %}" alt="Наши клиенты" class="clients-image">
+            </div>
+        </section>
+        <!-- Контактная информация -->
+        <section class="contacts-section" id="contacts">
+            <div class="contacts-columns">
+                <div class="contact-block">
+                    <div class="contact-title">
+                        <h3>Для клиентов</h3>
+                        <span class="dot cyan"></span>
+                    </div>
+                    <p><a href="mailto:info@caramel.agency">info@caramel.agency</a></p>
+                    <p><a href="tel:+74951300333">+7 (495) 130-03-33</a></p>
+                </div>
+                <div class="contact-block">
+                    <div class="contact-title">
+                        <h3>Работа в CARAMEL AGENCY</h3>
+                        <span class="dot yellow"></span>
+                    </div>
+                    <p><a href="mailto:job@caramel.agency">job@caramel.agency</a></p>
+                </div>
+                <div class="contact-block">
+                    <div class="contact-title">
+                        <h3>Для СМИ и партнёров</h3>
+                        <span class="dot red"></span>
+                    </div>
+                    <p><a href="mailto:smm@caramel.agency">smm@caramel.agency</a></p>
+                    <p>Сергей Дунской</p>
+                    <p class="small-text">Business assistant</p>
+                </div>
+            </div>
+            <div class="contacts-divider"></div>
+            <div class="contacts-socials">
+                <a href="{% url '404_preview' %}">Дзен</a>
+                <a href="{% url '404_preview' %}">VC.ru</a>
+                <a href="{% url '404_preview' %}">TG</a>
+                <a href="{% url '404_preview' %}">VK</a>
+                <a href="{% url '404_preview' %}">INST</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2 class="footer-title logo">caramel.</h2>
+                <p>© 2017-2025 MIGEL.AGENCY<br>Коммуникационное агентство</p>
+            </div>
+            <div class="footer-section">
+                <h2 class="footer-title">АДРЕС:</h2>
+                <p>г. Москва, ул. Примерная, д. 1<br>Тел: +7 (495) 123-45-67</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const img = document.getElementById('rotating-img');
+        let rotation = 0;
+
+        window.addEventListener('load', () => {
+            rotation += 360;
+            img.style.transform = `rotate(${rotation}deg)`;
+        });
+
+        img.addEventListener('click', () => {
+            rotation += 360;
+            img.style.transform = `rotate(${rotation}deg)`;
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const arrow = document.querySelector('.arrow-icon');
+            setTimeout(() => {
+                arrow.classList.add('visible');
+            }, 100); // чтобы был переход с delay
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Чтобы сработало один раз
+                    }
+                });
+            }, {
+                threshold: 0.1  // когда 10% секции видно, запускаем анимацию
+            });
+
+            sections.forEach(section => {
+                section.classList.add('section'); // добавляем класс со стилями скрытия
+                observer.observe(section);
+            });
+        });
+    </script>
+    <script>
+        async function loadCases() {
+            try {
+                const response = await fetch('/api/cases/');
+                if (!response.ok) throw new Error('Ошибка загрузки кейсов');
+                const data = await response.json();
+
+                const container = document.querySelector('.cases-grid');
+                container.innerHTML = ''; // очистить текущие кейсы
+
+                data.cases.forEach(c => {
+                    const card = document.createElement('div');
+                    card.classList.add('case-card');
+
+                    card.innerHTML = `
+          <img src="${c.image_url}" alt="${c.title}">
+          <h3>${c.title}</h3>
+          <p>${c.description}</p>
+          <span class="case-tag">${c.tags}</span>
+        `;
+
+                    container.appendChild(card);
+                });
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadCases);
+    </script>
+
+</body>
+
+</html>
