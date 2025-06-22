@@ -36,13 +36,14 @@ caramel_site/
 ### 1. Клонировать репозиторий:
 
 ```bash
-git clone <URL репозитория>
-cd <папка проекта>
+git clone https://github.com/llcky8/caramel_site
+cd caramel_site
 ```
 
 ### 2. Создать виртуальное окружение и активировать его:
 ```bash
 python -m venv venv
+.\venv\Scripts\activate
 ```
 ### 3. Установить зависимости:
 
