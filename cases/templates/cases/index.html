@@ -50,7 +50,6 @@
                     </h1>
                 </div>
             </section>
-
             <section class="smm-section">
                 <div class="smm-wrapper">
                     <div class="smm-label">SMM</div>
@@ -137,21 +136,8 @@
                 </div>
             </div>
         </section>
-        <!-- Информация о клиентах -->
-        <section class="clients-section">
-            <div class="clients-content">
-                <h2 class="clients-title">КЛИЕНТЫ</h2>
-                <p class="clients-subtitle">
-                    В числе наших <span class="highlight">amigos</span> — крупные бренды<br>
-                    и отраслевые лидеры
-                </p>
-            </div>
-            <div class="clients-image-wrapper">
-                <img src="{% static 'img/clients.png' %}" alt="Наши клиенты" class="clients-image">
-            </div>
-        </section>
         <!-- Кейсы -->
-        <section class="cases-section"id="cases">
+        <section class="cases-section" id="cases">
             <h2 class="cases-title">Кейсы</h2>
             <div class="cases-grid">
                 {% for case in cases %}
@@ -166,7 +152,19 @@
                 {% endfor %}
             </div>
         </section>
-
+        <!-- Информация о клиентах -->
+        <section class="clients-section">
+            <div class="clients-content">
+                <h2 class="clients-title">КЛИЕНТЫ</h2>
+                <p class="clients-subtitle">
+                    В числе наших <span class="highlight">amigos</span> — крупные бренды<br>
+                    и отраслевые лидеры
+                </p>
+            </div>
+            <div class="clients-image-wrapper">
+                <img src="{% static 'img/clients.png' %}" alt="Наши клиенты" class="clients-image">
+            </div>
+        </section>
         <!-- Контактная информация -->
         <section class="contacts-section" id="contacts">
             <div class="contacts-columns">
