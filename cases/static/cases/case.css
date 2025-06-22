@@ -1,7 +1,17 @@
 /* Cases section */
 .cases-section {
   background: #ffffff;
-  padding: 100px 100px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 60px;
+}
+
+.clients-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  text-transform: uppercase;
 }
 
 .cases-grid {
@@ -14,7 +24,7 @@
   background: white;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   text-align: left;
   max-width: 700px;
 }
@@ -44,12 +54,12 @@
 
 @media (max-width: 640px) {
   .cases-section {
-    padding: 60px 30px; /* адаптивный внутренний отступ */
+    padding: 60px 30px;
   }
 
   .cases-grid {
-    grid-template-columns: 1fr; /* по одной карточке в ряд */
-    gap: 30px; /* чуть меньше отступ между карточками */
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .case-card {
