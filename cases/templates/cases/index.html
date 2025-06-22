@@ -151,14 +151,21 @@
             </div>
         </section>
         <!-- Кейсы -->
-        {% for case in cases %}
-        <div class="case-card">
-            <img src="{{ case.image.url }}" alt="{{ case.title }}">
-            <h3>{{ case.title }}</h3>
-            <p>{{ case.description }}</p>
-            <div class="case-tag">{{ case.tags }}</div>
-        </div>
-        {% endfor %}
+        <section class="cases-section">
+            <div class="cases-grid">
+                {% for case in cases %}
+                <div class="case-card">
+                    {% if case.image %}
+                    <img src="{{ case.image.url }}" alt="{{ case.title }}">
+                    {% endif %}
+                    <h3>{{ case.title }}</h3>
+                    <p>{{ case.description }}</p>
+                    <div class="case-tag">{{ case.tags }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
         <!-- Контактная информация -->
         <section class="contacts-section" id="contacts">
             <div class="contacts-columns">
