@@ -42,8 +42,7 @@
                         <span class="line offset-left">Самый</span><br />
                         <span class="line">страстный Social Media</span><br />
                         <span class="line offset-right with-main">
-                            <img id="rotating-img" src="{% static 'img/main.svg' %}" class="main-icon" alt="Main Icon"
-                                alt="Main Icon" />
+                            <img id="rotating-img" src="{% static 'img/main.svg' %}" class="main-icon" alt="Main Icon"/>
                             Marketing
                         </span>
                         <img src="{% static 'img/strelka.svg' %}" class="arrow-icon" alt="Arrow Down" />
@@ -256,37 +255,5 @@
             });
         });
     </script>
-    <script>
-        async function loadCases() {
-            try {
-                const response = await fetch('/api/cases/');
-                if (!response.ok) throw new Error('Ошибка загрузки кейсов');
-                const data = await response.json();
-
-                const container = document.querySelector('.cases-grid');
-                container.innerHTML = ''; // очистить текущие кейсы
-
-                data.cases.forEach(c => {
-                    const card = document.createElement('div');
-                    card.classList.add('case-card');
-
-                    card.innerHTML = `
-          <img src="${c.image_url}" alt="${c.title}">
-          <h3>${c.title}</h3>
-          <p>${c.description}</p>
-          <span class="case-tag">${c.tags}</span>
-        `;
-
-                    container.appendChild(card);
-                });
-            } catch (error) {
-                console.error(error);
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', loadCases);
-    </script>
-
-</body>
-
+    </body>
 </html>
