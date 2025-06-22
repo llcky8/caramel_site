@@ -42,7 +42,8 @@
                         <span class="line offset-left">Самый</span><br />
                         <span class="line">страстный Social Media</span><br />
                         <span class="line offset-right with-main">
-                            <img id="rotating-img" src="{% static 'img/main.svg' %}" class="main-icon" alt="Main Icon"/>
+                            <img id="rotating-img" src="{% static 'img/main.svg' %}" class="main-icon"
+                                alt="Main Icon" />
                             Marketing
                         </span>
                         <img src="{% static 'img/strelka.svg' %}" class="arrow-icon" alt="Arrow Down" />
@@ -150,18 +151,14 @@
             </div>
         </section>
         <!-- Кейсы -->
-        <section class="cases-section">
-            <div class="cases-grid">
-                {% for case in cases %}
-                <div class="case-card">
-                    <img src="{{ case.image.url }}" alt="{{ case.title }}">
-                    <h3>{{ case.title }}</h3>
-                    <p>{{ case.description }}</p>
-                    <div class="case-tag">{{ case.tags }}</div>
-                </div>
-                {% endfor %}
-            </div>
-        </section>
+        {% for case in cases %}
+        <div class="case-card">
+            <img src="{{ case.image.url }}" alt="{{ case.title }}">
+            <h3>{{ case.title }}</h3>
+            <p>{{ case.description }}</p>
+            <div class="case-tag">{{ case.tags }}</div>
+        </div>
+        {% endfor %}
         <!-- Контактная информация -->
         <section class="contacts-section" id="contacts">
             <div class="contacts-columns">
@@ -255,5 +252,6 @@
             });
         });
     </script>
-    </body>
+</body>
+
 </html>
