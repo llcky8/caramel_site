@@ -85,7 +85,7 @@ python manage.py createsuperuser
 ### 8. Запустить сервер разработки:
 
 ```bash
-python manage.py runserver
+python manage.py runserver --insecure
 ```
 
 ### 9. Открыть в браузере:
