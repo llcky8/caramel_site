@@ -1,5 +1,6 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
+from django.views.static import serve
 from cases.admin import admin_site  # твой кастомный админ
 from cases.views import cases_view, page_404_preview  # <--- добавлено здесь
 from cases.views import cases_api
@@ -15,9 +16,9 @@ urlpatterns = [
     path('404-preview/', page_404_preview, name='404_preview'),
     path('api/cases/', cases_api, name='cases_api'),
     path("robots.txt", TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),
+    re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+
 ]
-   url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 
 if settings.DEBUG:
     # Раздаём статику и медиа в режиме разработки
