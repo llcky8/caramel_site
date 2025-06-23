@@ -4,7 +4,9 @@ from cases.admin import admin_site  # твой кастомный админ
 from cases.views import cases_view, page_404_preview  # <--- добавлено здесь
 from cases.views import cases_api
 from django.views.generic import TemplateView
-
+# для медиа при DEBUG=True
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin_site.urls),
@@ -14,10 +16,8 @@ urlpatterns = [
     path('api/cases/', cases_api, name='cases_api'),
     path("robots.txt", TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),
 ]
-
-# для медиа при DEBUG=True
-from django.conf import settings
-from django.conf.urls.static import static
+   url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 
 if settings.DEBUG:
     # Раздаём статику и медиа в режиме разработки
@@ -27,5 +27,5 @@ else:
     # Раздаём статику и медиа и при DEBUG=False (локальная разработка, без nginx)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    
+
 handler404 = 'cases.views.custom_404'
