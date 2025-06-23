@@ -20,7 +20,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 if settings.DEBUG:
+    # Раздаём статику и медиа в режиме разработки
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
-
+else:
+    # Раздаём статику и медиа и при DEBUG=False (локальная разработка, без nginx)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    
 handler404 = 'cases.views.custom_404'
