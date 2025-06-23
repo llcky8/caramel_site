@@ -34,4 +34,4 @@ def delete_user(request, user_id):
         return redirect('login')
 
 def custom_404(request, exception):
-    return render(request, '404.html', status=404)
+    return render(request, 'cases/404.html', status=404)
