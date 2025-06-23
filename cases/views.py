@@ -32,3 +32,6 @@ def delete_user(request, user_id):
         return redirect('admin_panel')
     else:
         return redirect('login')
+
+def custom_404(request, exception):
+    return render(request, '404.html', status=404)
