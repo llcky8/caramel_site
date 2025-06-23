@@ -128,7 +128,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']  # если у тебя папка static в корне проекта
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # куда собирается collectstatic (для продакшена)
 
 
